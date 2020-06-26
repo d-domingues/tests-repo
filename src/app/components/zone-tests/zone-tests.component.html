@@ -1,0 +1,17 @@
+<div class="counters">
+  <div class="count">{{ state.count }}</div>
+  <div class="countLabel">Count</div>
+  <button class="decrement" (click)="pushValue(-1)">
+    <i class="material-icons">
+      remove
+    </i>
+  </button>
+  <button class="increment" (click)="pushValue(+1)">
+    <i class="material-icons">
+      add
+    </i>
+  </button>
+  <h3>Counter:<span [textContent]="counter"></span></h3>
+  <button (click)="removeClick()">REMOVE</button>
+  <button (click)="addClick()">ADD</button>
+</div>

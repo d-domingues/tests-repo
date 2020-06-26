@@ -1,0 +1,14 @@
+.comp-btn {
+  border: 2px solid darkslateblue;
+  padding: 5px;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  background: deepskyblue;
+}
+
+.active-route {
+  background: blueviolet;
+}
