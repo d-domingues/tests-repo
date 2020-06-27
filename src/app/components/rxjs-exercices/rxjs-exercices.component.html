@@ -1,7 +1,7 @@
 <div
   *ngIf="source | async as src"
-  class="countdown-frame"
-  [style.background]="src != 0 ? 'yellow' : 'lightgrey'"
+  [ngClass]="getClass(src)"
+  (mousedown)="onClick.next()"
 >
-  {{ src }}
+  {{ src.value }}
 </div>
